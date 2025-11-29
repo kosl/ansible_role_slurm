@@ -12,7 +12,7 @@ slurm_default_dependencies:
     - "pmix-{{ pmix_version }}"
     - "pmix-devel-{{ pmix_version }}"
   slurmrestd:
-#    - http-parser-devel
+    - http-parser-devel
     - json-c-devel
   mysql:
     - mariadb-devel

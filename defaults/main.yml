@@ -34,8 +34,8 @@ slurm_rpmbuild_features:
   nvml:
   libcurl:
   freeipmi:
+  slurmrestd:
 #  rsmi:
-#  slurmrestd:
 
 slurm_checksums:
   '25.11.0': 'sha1:7a0fc39b0836e068f1a4c4a2ba7a32a4c342d909'
