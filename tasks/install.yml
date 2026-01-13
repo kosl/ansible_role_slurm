@@ -1,7 +1,7 @@
 ---
 
 - name: add slurm unix group
-  group:
+  ansible.builtin.group:
     name: slurm
     system: no
     state: present
@@ -23,7 +23,7 @@
   when: slurm_user_uid is defined
 
 - name: add munge unix group
-  group:
+  ansible.builtin.group:
     name: munge
     system: no
     state: present
@@ -45,7 +45,7 @@
   when: slurm_munge_user_uid is defined
 
 - name: add slurmrestd unix group
-  group:
+  ansible.builtin.group:
     name: slurmrestd
     system: no
     state: present
