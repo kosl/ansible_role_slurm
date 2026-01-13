@@ -26,7 +26,6 @@ slurm_default_dependencies:
   pam:
     - pam-devel
   jwt:
-    - epel-release
     - libjwt-devel
   bpf:
     - kernel-headers
@@ -43,12 +42,12 @@ slurm_default_build_flags:
   pmix:       '--with pmix'
   numa:       '--with numa'
   lua:        '--with lua'
-  slurmrestd: '--with slurmrestd'
   jwt:        '--with jwt'
   nvml:       '--with nvml'
   libcurl:    '--with libcurl'
   rsmi:       '--with rsmi'
   freeipmi:   '--with freeipmi'
+  slurmrestd: '--with slurmrestd'
   
 
 slurm_packages:
