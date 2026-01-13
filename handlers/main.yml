@@ -63,7 +63,7 @@
     priv: "slurm_acct_db.*:ALL"
     append_privs: true
     state: present
-  with_items:
+  loop:
     - "localhost"
     - "{{ slurmdbd_host }}"
   retries: 3

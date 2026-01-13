@@ -6,7 +6,7 @@
     name:
       - epel-release
     state: present
-    tags: build_slurm
+  tags: build_slurm
 
 - name: Build slurm
   ansible.builtin.import_tasks:
